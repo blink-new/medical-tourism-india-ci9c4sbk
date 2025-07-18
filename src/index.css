@@ -18,8 +18,8 @@
     --secondary-foreground: 240 5.9% 10%;
     --muted: 240 4.8% 95.9%;
     --muted-foreground: 240 3.8% 46.1%;
-    --accent: 168 85% 24%;
-    --accent-foreground: 0 0% 98%;
+    --accent: 240 4.8% 95.9%;
+    --accent-foreground: 240 5.9% 10%;
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 0 0% 98%;
     --border: 240 5.9% 90%;
@@ -54,8 +54,8 @@
     --secondary-foreground: 0 0% 98%;
     --muted: 240 3.7% 15.9%;
     --muted-foreground: 240 5% 64.9%;
-    --accent: 168 85% 24%;
-    --accent-foreground: 0 0% 98%;
+    --accent: 240 3.7% 15.9%;
+    --accent-foreground: 240 4.8% 95.9%;
     --destructive: 0 62.8% 30.6%;
     --destructive-foreground: 0 0% 98%;
     --border: 240 3.7% 15.9%;
@@ -89,7 +89,7 @@
 
 @layer components {
   .forex-gradient {
-    background: linear-gradient(135deg, hsl(var(--primary)) 0%, hsl(var(--accent)) 100%);
+    background: linear-gradient(135deg, hsl(var(--primary)) 0%, hsl(var(--primary) / 80%) 100%);
   }
   
   .hero-pattern {
@@ -98,7 +98,7 @@
   }
   
   .currency-card {
-    background: linear-gradient(135deg, rgb(30 64 175 / 5%) 0%, rgb(5 150 105 / 5%) 100%);
+    background: linear-gradient(135deg, rgb(30 64 175 / 5%) 0%, rgb(30 64 175 / 3%) 100%);
     border: 1px solid rgb(30 64 175 / 10%);
   }
 }
